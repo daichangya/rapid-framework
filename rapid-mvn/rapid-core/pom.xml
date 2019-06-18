@@ -256,7 +256,7 @@
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-webapp</artifactId>
 			<scope>compile</scope>
-			<version>7.2.2.v20101205</version>
+			<version>8.0.0.M3</version>
 			<optional>true</optional>
 		</dependency>
 		<!-- hessian web service -->

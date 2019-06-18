@@ -22,7 +22,8 @@
 		<hibernate.version>3.3.2.GA</hibernate.version>
 		<ibatis.version>2.3.4.726</ibatis.version>
 		<mybatis.version>3.0.3</mybatis.version>
-		
+		<rapid-generator>4.0.6-SNAPSHOT</rapid-generator>
+
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	  
@@ -32,28 +33,28 @@
 	<dependency>
 	  <groupId>com.googlecode.rapid-framework</groupId>
 	  <artifactId>rapid-core</artifactId>
-	  <version>4.0.1</version>        
+		<version>${rapid-generator}</version>
 	</dependency>
 	
 	<!-- 代码生成器核心引擎 -->
 	<dependency>
 	  <groupId>com.googlecode.rapid-framework</groupId>
 	  <artifactId>rapid-generator</artifactId>
-	  <version>4.0.1</version>        
+		<version>${rapid-generator}</version>
 	</dependency>
 	
 	<!-- 代码生成器扩展包 -->
 	<dependency>
 	  <groupId>com.googlecode.rapid-framework</groupId>
 	  <artifactId>rapid-generator-ext</artifactId>
-	  <version>4.0.1</version>        
+		<version>${rapid-generator}</version>
 	</dependency>
 	
 	<!-- 代码生成器模板,模板根目录通过 classpath:generator/template/rapid 可以引用 -->
 	<dependency>
 	  <groupId>com.googlecode.rapid-framework</groupId>
 	  <artifactId>rapid-generator-template</artifactId>
-	  <version>4.0.1</version>        
+		<version>${rapid-generator}</version>
 	</dependency>		
   	<!-- rapid end -->
   
@@ -290,11 +291,11 @@
 			</exclusion>
 		</exclusions>
 	</dependency>
-	<dependency>
-		<groupId>net.sf.log4jdbc</groupId>
-		<artifactId>log4jdbc3</artifactId>
-		<version>1.2.1</version>	
-	</dependency>	
+	<!--<dependency>-->
+		<!--<groupId>net.sf.log4jdbc</groupId>-->
+		<!--<artifactId>log4jdbc3</artifactId>-->
+		<!--<version>1.2.1</version>	-->
+	<!--</dependency>	-->
 	<!-- logging end-->
 	
 	<!-- j2ee web spec -->
@@ -526,7 +527,7 @@
 		<groupId>org.eclipse.jetty</groupId>
 		<artifactId>jetty-webapp</artifactId>
 		<scope>compile</scope>
-		<version>7.2.2.v20101205</version>
+		<version>8.0.0.M3</version>
 		<optional>true</optional>
 	</dependency>
 			
@@ -795,72 +796,72 @@
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
-			<repositories>
-				<repository>
-					<id>maven.net.cn</id>
-					<name>maven.net.cn</name>
-					<url>http://maven.net.cn/content/groups/public/</url>
-					<snapshots>
-						<enabled>false</enabled>
-					</snapshots>
-				</repository>
-				<repository>
-					<id>offical</id>
-					<name>Maven Official Repository</name>
-					<url>http://repo1.maven.org/maven2</url>
-					<snapshots>
-						<enabled>false</enabled>
-					</snapshots>
-				</repository>
-				<repository>
-					<id>jboss</id>
-					<name>Jboss Repository</name>
-					<url>http://repository.jboss.com/maven2</url>
-					<snapshots>
-						<enabled>false</enabled>
-					</snapshots>
-				</repository>
-				<repository>
-					<id>jboss https</id>
-					<name>Jboss Repository</name>
-					<url>https://repository.jboss.org/nexus/content/repositories/public</url>
-					<snapshots>
-						<enabled>false</enabled>
-					</snapshots>
-				</repository>
-				<repository>
-					<id>mirrors.ibiblio.org</id>
-					<name>mirrors.ibiblio.org</name>
-					<url>http://mirrors.ibiblio.org/pub/mirrors/maven2</url>
-					<snapshots>
-						<enabled>false</enabled>
-					</snapshots>
-				</repository>				
-				<repository>
-					<id>java.net</id>
-					<name>Java.net Repository</name>
-					<url>http://download.java.net/maven/2/</url>
-					<snapshots>
-						<enabled>false</enabled>
-					</snapshots>
-				</repository>
-				<repository>
-					<id>springsource</id>
-					<name>SpringSource Repository</name>
-					<url>http://repository.springsource.com/maven/bundles/release</url>
-					<snapshots>
-						<enabled>false</enabled>
-					</snapshots>
-				</repository>
-				<repository>
-					<id>springside</id>
-					<name>http://springside.googlecode.com/svn/repository/</name>
-					<url>http://springside.googlecode.com/svn/repository/</url>
-					<snapshots>
-						<enabled>false</enabled>
-					</snapshots>
-				</repository>								
-			</repositories>
+			<!--<repositories>-->
+				<!--<repository>-->
+					<!--<id>maven.net.cn</id>-->
+					<!--<name>maven.net.cn</name>-->
+					<!--<url>http://maven.net.cn/content/groups/public/</url>-->
+					<!--<snapshots>-->
+						<!--<enabled>false</enabled>-->
+					<!--</snapshots>-->
+				<!--</repository>-->
+				<!--<repository>-->
+					<!--<id>offical</id>-->
+					<!--<name>Maven Official Repository</name>-->
+					<!--<url>http://repo1.maven.org/maven2</url>-->
+					<!--<snapshots>-->
+						<!--<enabled>false</enabled>-->
+					<!--</snapshots>-->
+				<!--</repository>-->
+				<!--<repository>-->
+					<!--<id>jboss</id>-->
+					<!--<name>Jboss Repository</name>-->
+					<!--<url>http://repository.jboss.com/maven2</url>-->
+					<!--<snapshots>-->
+						<!--<enabled>false</enabled>-->
+					<!--</snapshots>-->
+				<!--</repository>-->
+				<!--<repository>-->
+					<!--<id>jboss https</id>-->
+					<!--<name>Jboss Repository</name>-->
+					<!--<url>https://repository.jboss.org/nexus/content/repositories/public</url>-->
+					<!--<snapshots>-->
+						<!--<enabled>false</enabled>-->
+					<!--</snapshots>-->
+				<!--</repository>-->
+				<!--<repository>-->
+					<!--<id>mirrors.ibiblio.org</id>-->
+					<!--<name>mirrors.ibiblio.org</name>-->
+					<!--<url>http://mirrors.ibiblio.org/pub/mirrors/maven2</url>-->
+					<!--<snapshots>-->
+						<!--<enabled>false</enabled>-->
+					<!--</snapshots>-->
+				<!--</repository>				-->
+				<!--<repository>-->
+					<!--<id>java.net</id>-->
+					<!--<name>Java.net Repository</name>-->
+					<!--<url>http://download.java.net/maven/2/</url>-->
+					<!--<snapshots>-->
+						<!--<enabled>false</enabled>-->
+					<!--</snapshots>-->
+				<!--</repository>-->
+				<!--<repository>-->
+					<!--<id>springsource</id>-->
+					<!--<name>SpringSource Repository</name>-->
+					<!--<url>http://repository.springsource.com/maven/bundles/release</url>-->
+					<!--<snapshots>-->
+						<!--<enabled>false</enabled>-->
+					<!--</snapshots>-->
+				<!--</repository>-->
+				<!--<repository>-->
+					<!--<id>springside</id>-->
+					<!--<name>http://springside.googlecode.com/svn/repository/</name>-->
+					<!--<url>http://springside.googlecode.com/svn/repository/</url>-->
+					<!--<snapshots>-->
+						<!--<enabled>false</enabled>-->
+					<!--</snapshots>-->
+				<!--</repository>								-->
+			<!--</repositories>-->
 		</profile>
 		<profile>
 			<id>test</id>

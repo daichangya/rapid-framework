@@ -148,38 +148,38 @@
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
-			<repositories>
-				<repository>
-					<id>central_prod</id>
-					<url>http://10.2.4.30:8080/artifactory/repo</url>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-				</repository>
-				<repository>
-					<id>central</id>
-					<url>http://10.2.4.31:8080/artifactory/repo</url>
-					<snapshots>
-						<enabled>true</enabled>
-					</snapshots>
-				</repository>
-				<repository>
-					<id>snapshots</id>
-					<url>http://10.2.4.31:8080/artifactory/repo</url>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-				</repository>
-			</repositories>
-			<pluginRepositories>
-				<pluginRepository>
-					<id>central</id>
-					<url>http://10.2.4.31:8080/artifactory/repo</url>
-					<snapshots>
-						<enabled>false</enabled>
-					</snapshots>
-				</pluginRepository>
-			</pluginRepositories>
+			<!--<repositories>-->
+				<!--<repository>-->
+					<!--<id>central_prod</id>-->
+					<!--<url>http://10.2.4.30:8080/artifactory/repo</url>-->
+					<!--<snapshots>-->
+						<!--<enabled>true</enabled>-->
+					<!--</snapshots>-->
+				<!--</repository>-->
+				<!--<repository>-->
+					<!--<id>central</id>-->
+					<!--<url>http://10.2.4.31:8080/artifactory/repo</url>-->
+					<!--<snapshots>-->
+						<!--<enabled>true</enabled>-->
+					<!--</snapshots>-->
+				<!--</repository>-->
+				<!--<repository>-->
+					<!--<id>snapshots</id>-->
+					<!--<url>http://10.2.4.31:8080/artifactory/repo</url>-->
+					<!--<releases>-->
+						<!--<enabled>true</enabled>-->
+					<!--</releases>-->
+				<!--</repository>-->
+			<!--</repositories>-->
+			<!--<pluginRepositories>-->
+				<!--<pluginRepository>-->
+					<!--<id>central</id>-->
+					<!--<url>http://10.2.4.31:8080/artifactory/repo</url>-->
+					<!--<snapshots>-->
+						<!--<enabled>false</enabled>-->
+					<!--</snapshots>-->
+				<!--</pluginRepository>-->
+			<!--</pluginRepositories>-->
 		</profile>
 	</profiles>
 	
